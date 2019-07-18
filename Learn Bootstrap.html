@@ -1,0 +1,443 @@
+<!-- LEARN BOOTSTRAP
+
+    What is Bootstrap?
+    
+    - Front-End framework for UI and themes.
+    - HTML / CSS / JavaScript
+    - Used for building responsive, mobile first web application and websites.
+    
+    Why use Bootstrap?
+
+    - Increase development speed
+    - Responsiveness
+    - Consistency
+    - Customizable
+    - Support
+
+    What we will cover...
+    
+    - What is Bootstrap?
+    - Installation / Setup
+    - HTML / CSS Components
+    - Grid System
+    - Create Bootstrap Cheat Sheet
+
+    HTML / CSS Components & Helpers
+
+    - Navbar & Dropdowns
+    - Jumbotron
+    - Alerts & Progress Bars
+    - Form & Inputs
+    - Buttons & Links
+    - Labels & Badges
+    - Icons
+    - List Groups
+    - Wells & Panels
+    - Pagination
+    - Thumbnails
+    - Tables
+    - Grid System
+    - Responsive Utilities
+
+    JavaScript Widgets & Helpers
+
+    - Transitions
+    - Modals
+    - Dropdowns
+    - Tabs
+    - Carousel / Slider
+    - Alert
+    - Popovers
+    - Tooltips
+    - Collapsable Elements
+
+    Install Methods
+
+    - Manually Downloads Source Files (CSS/JS)
+    - CDN (Content Delivery Network)
+    - Bower
+    - NPM
+
+    (jQuery is required for all JavaScript widgets)
+
+-->
+<html>
+    <head>
+        <title>Learn Bootstrap</title>
+    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <style>
+            .navbar{
+                margin-bottom: 0;
+                border-radius: 0;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-inverse">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Learn Bootstrap</a>
+              </div>
+          
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">Link</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Link</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+
+          <!-- JUMBOTRON -->
+          <div class="jumbotron text-center">
+              <div class="container">
+                <h1>Welcome to my website</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+          </div>
+
+    <!-- TYPOGRAPHY -->
+    <div class="container">
+        <h1 class="page-header">Hello World! <small>Learn Bootstrap</small></h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+        <p><mark>Laboriosam rerum</mark> error <strong> possimus</strong> vel omnis <u>dolorum</u> fuga sequi <em>repellendus</em>, voluptatem velit? <strike>Unde repellat</strike> nam veniam <s>officiis beatae</s>. Quos, dolores fugiat!</p>
+        <hr>
+
+        <!-- ALIGMENTS & TRANSFORMATION -->
+        <p class="text-left text-lowercase">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="text-right text-uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="text-center text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="text-nowrap">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <hr>
+
+        <!-- QUICK FLOATS -->
+        <div class="pull-right">Div float to right</div>
+        <div class="pull-left">Div float to left</div>
+        
+        <!-- CLEAR FLOAT -->
+        <div class="clearfix"></div>
+        <hr>
+
+        <!-- BLOCKQUOTE -->
+        <blockquote class="blockquote">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia modi in obcaecati doloremque debitis quos dolorum quo praesentium velit. Hic fugiat cumque, illo itaque nam quia perferendis nisi totam amet.</p>
+            <footer>Quote by <cite title="Waqar Hussain">Waqar Hussain</cite></footer>
+        </blockquote>
+
+        <blockquote class="blockquote-reverse">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia modi in obcaecati doloremque debitis quos dolorum quo praesentium velit. Hic fugiat cumque, illo itaque nam quia perferendis nisi totam amet.</p>
+                <footer>Quote by <cite title="Waqar Hussain">Waqar Hussain</cite></footer>
+        </blockquote>
+        <hr>
+
+        <!-- LISTS -->
+        <ul class="list-unstyled">
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+            <li>Item Four</li>
+            <li>Item Five</li>
+        </ul>
+        <hr>
+
+        <ul class="list-inline">
+                <li>Item One</li>
+                <li>Item Two</li>
+                <li>Item Three</li>
+                <li>Item Four</li>
+                <li>Item Five</li>
+        </ul>
+
+        <!-- CODE -->
+        <code>&lt;h1&gt;This is a HTML code.&lt;/h1&gt;</code>
+        <br>
+        Change Directory with <kbd>cd</kbd>
+        <br>
+        To edit Setting, press <kbd>Ctrl + , </kbd>
+        <hr>
+
+        <!-- CONTEXTUAL COLORS -->
+        <p class="text-primary">Primary Color</p>
+        <p class="text-success">Success Color</p>
+        <p class="text-info">Info Color</p>
+        <p class="text-warning">Warning Color</p>
+        <p class="text-danger">Danger Color</p>
+        <p class="text-muted">Muted Color</p>
+
+        <!-- CONTEXTUAL BACKGROUND COLORS -->
+        <p class="bg-primary">Primary Background Color</p>
+        <p class="bg-success">Success Background Color</p>
+        <p class="bg-info">Info Background Color</p>
+        <p class="bg-warning">Warning Background Color</p>
+        <p class="bg-danger">Danger Background Color</p>
+        <p class="bg-muted">Muted Background Color</p>
+    </div>
+
+    <div class="container">
+
+        <!-- BUTTONS -->
+        <button class="btn btn-default">Default</button>
+        <a href="#" class="btn btn-default" role="button">Link</a>
+        <input type="submit" value="Input" class="btn btn-default">
+        <hr>
+
+        <!-- CONTEXTUAL BUTTONS -->
+        <button class="btn btn-default">Default</button>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-danger">Delete</button>
+        <button class="btn btn-link">Link</button>
+        <hr>
+
+        <!-- BUTTON SIZES -->
+        <button class="btn btn-primary btn-lg">Primary</button>
+        <button class="btn btn-warning btn-md">Warning</button>
+        <button class="btn btn-success btn-sm">Success</button>
+        <button class="btn btn-danger btn-xs" disabled>Delete</button>
+    </div>
+    <hr>
+
+    <!-- FORMS -->
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" placeholder="Type your name..." class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Type your email..." class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea placeholder="Type your message..." class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <select class="form-control">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Upload File</label>
+                <input type="file">
+                <p class="help-block">only JPEG and PNG file format support. </p>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Check out
+                </label>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-default">
+        </form>
+        <hr>
+
+        <!-- INLINE FORM -->
+        <form class="form-inline">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" placeholder="Type your name..." class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Type your email..." class="form-control">
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Remember me password
+                </label>
+            </div>
+            <input type="submit" value="Login" class="btn btn-default">
+        </form>
+    </div>
+    <hr>
+
+    <!-- TABLES -->
+    <div class="container">
+        <table class="table table-striped table-bordered table-hover table-condensed">
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>Kashif</td>
+                <td>Two</td>
+                <td>75</td>
+            </tr>
+            <tr class="danger">
+                <td>1002</td>
+                <td>Farhan</td>
+                <td>Five</td>
+                <td>70</td>
+            </tr>
+            <tr class="success">
+                <td>1003</td>
+                <td>Hameed</td>
+                <td>Seven</td>
+                <td>80</td>
+            </tr>
+        </table>
+    
+        <hr>
+    </div>
+
+    <!-- LIST GROUPS -->
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-item">Item One</li>
+            <li class="list-group-item">Item Two</li>
+            <li class="list-group-item">Item Three</li>
+            <li class="list-group-item">Item Four</li>
+            <li class="list-group-item">Item Five</li>
+        </ul>
+
+        <ul class="list-group">
+            <a href="#" class="list-group-item active">Item One</a>
+            <a href="#" class="list-group-item">Item Two</a>
+            <a href="#" class="list-group-item list-group-item-success">Item Three</a>
+            <a href="#" class="list-group-item">Item Four</a>
+            <a href="#" class="list-group-item disabled">Item Five</a>
+        </ul>
+    
+        <hr>
+    </div>
+
+    <!-- PANELS -->
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel Title</h3>
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quasi quibusdam aperiam quia molestiae a dicta veritatis facere, cupiditate sapiente consequatur natus nihil cum doloribus, eius officiis accusantium maxime. Eligendi.</p>
+            </div>
+            <div class="panel-footer"> &copy; Copyright and Design by: ABC & Co. </div>
+        </div>
+        <hr>
+
+        <!-- WELLS -->
+        <div class="well well-lg">Hello World!</div>
+        <div class="well">Hello World!</div>
+        <div class="well well-sm">Hello World!</div>
+        <hr>
+
+        <!-- ALERTS -->
+        <div class="alert alert-success" role="alert"> Success Alert</div>
+        <div class="alert alert-info" role="alert">Info Alert</div>
+        <div class="alert alert-warning" role="alert">Warning Alert</div>
+        <div class="alert alert-danger alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+            Danger Alert
+        </div>
+        <hr>
+
+        <!-- PROGRESS BAR -->
+        <div class="progress">
+            <div class="progress-bar" style="width:50%">
+                50%
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" style="width:70%">
+                70%
+            </div>
+        </div>
+
+        <!-- LABELS -->
+        <span class="label label-default">Default</span>
+        <h1>Heading<span class="label label-primary">Primary</span></h1>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+        <hr>
+
+        <!-- BADGES -->
+        <a href="#">Inbox<span class="badge">12</span></a>
+
+        <button class="btn btn-primary">
+            Message <span class="badge">5</span>
+        </button>
+    
+        <hr>
+    </div>
+
+    <!-- IMAGES -->
+    <div class="container">
+        <img class="thumbnail" src="https://www.employersresource.com/wp-content/uploads/2016/04/350x150.png">
+        <img class="img-rounded" src="https://www.employersresource.com/wp-content/uploads/2016/04/350x150.png">
+        <img class="img-circle" src="https://www.employersresource.com/wp-content/uploads/2016/04/350x150.png">
+    
+        <hr>
+    </div>
+
+    <!-- GRID SYSTEM -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolores ab vel corrupti. Dolor explicabo nobis facilis ut asperiores error id, quod nesciunt modi exercitationem ullam distinctio odio, dicta ipsam.</p>
+            </div>
+            <div class="col-md-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eveniet veniam necessitatibus accusamus, molestias aspernatur a ut dolorem expedita consequuntur illum aliquam tenetur adipisci voluptatibus iure commodi omnis minima velit?</p>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
